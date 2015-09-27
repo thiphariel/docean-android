@@ -3,4 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".MainActivity">
 
+    <item android:id="@+id/menu_refresh"
+        android:icon="@drawable/refresh"
+        android:title="Refresh"
+        app:showAsAction="always"/>
 </menu>

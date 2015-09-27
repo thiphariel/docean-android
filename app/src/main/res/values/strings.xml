@@ -6,4 +6,11 @@
 
     <string name="drawer_open">Open</string>
     <string name="drawer_close">Close</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="login_or_text">OR</string>
+    <string name="register_button_text">Register</string>
+    <string name="login_button_text">Login</string>
+    <string name="title_activity_ssh">SshActivity</string>
+    <string name="title_activity_droplets">Droplets</string>
+    <string name="title_activity_add_droplet">Add new Droplet</string>
 </resources>

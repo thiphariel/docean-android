@@ -2,19 +2,47 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.thiphariel.docean" >
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/icon"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name" >
+            android:name=".activities.DropletsActivity"
+            android:launchMode="singleTask" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.LoginActivity"
+            android:label="@string/title_activity_login" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="docean" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.SshActivity"
+            android:label="@string/title_activity_ssh" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.DropletsActivity" />
+        </activity>
+        <activity
+            android:name=".activities.AddDropletActivity"
+            android:label="@string/title_activity_add_droplet" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.DropletsActivity" />
         </activity>
     </application>
 
